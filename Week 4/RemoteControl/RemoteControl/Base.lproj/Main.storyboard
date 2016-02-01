@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RemoteControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fI7-6e-SUi"/>
+                        <viewControllerLayoutGuide type="bottom" id="nqE-ei-hxR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ui5-HN-dzv" userLabel="v_top">
+                                <rect key="frame" x="20" y="51" width="560" height="249"/>
+                                <color key="backgroundColor" red="0.52477242934550317" green="1" blue="0.74997200608295356" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-QU-qQq" userLabel="v_down">
+                                <rect key="frame" x="20" y="303" width="560" height="277"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93672180645524428" blue="0.29094828286793706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KOb-QU-qQq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GWS-mB-XhI"/>
+                            <constraint firstItem="KOb-QU-qQq" firstAttribute="top" secondItem="ui5-HN-dzv" secondAttribute="bottom" id="NKO-7v-LMV"/>
+                            <constraint firstItem="KOb-QU-qQq" firstAttribute="height" secondItem="ui5-HN-dzv" secondAttribute="height" multiplier="2" id="Nkd-MR-s9w"/>
+                            <constraint firstItem="nqE-ei-hxR" firstAttribute="top" secondItem="KOb-QU-qQq" secondAttribute="bottom" id="UuB-kd-olj"/>
+                            <constraint firstItem="ui5-HN-dzv" firstAttribute="top" secondItem="fI7-6e-SUi" secondAttribute="bottom" id="V1m-Nq-4tt"/>
+                            <constraint firstItem="KOb-QU-qQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zvh-iP-eRD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ui5-HN-dzv" secondAttribute="trailing" id="bEd-bl-f9x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KOb-QU-qQq" secondAttribute="trailing" id="oxz-5m-fH7"/>
+                            <constraint firstItem="ui5-HN-dzv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rW8-fU-eBT"/>
+                            <constraint firstItem="ui5-HN-dzv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uCi-Dk-oYg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="-1075"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.55353244632681209" green="1" blue="0.56979826636767428" alpha="1" colorSpace="calibratedRGB"/>
+</document>
