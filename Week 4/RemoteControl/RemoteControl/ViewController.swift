@@ -144,8 +144,23 @@ class ViewController: UIViewController {
 
     
     
+    @IBAction func ch_minus(sender: AnyObject) {
+        channel--;
+        if channel<1{
+            channel = 99
+        }
+        update()
+        update()
+    }
     
     
+    @IBAction func chPlus(sender: AnyObject) {
+        channel++;
+        if channel>99{
+            channel = 1
+        }
+        update()
+    }
     
     
     
