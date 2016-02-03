@@ -27,6 +27,30 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-QU-qQq" userLabel="v_down">
                                 <rect key="frame" x="20" y="226" width="560" height="354"/>
                                 <subviews>
+                                    <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzV-t9-hWO">
+                                        <rect key="frame" x="215" y="8" width="131" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Power: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wj-Ba-zyD">
+                                                <rect key="frame" x="8" y="16" width="57" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlh-z3-IZp">
+                                                <rect key="frame" x="73" y="10" width="51" height="31.5"/>
+                                                <connections>
+                                                    <action selector="switch_action:" destination="BYZ-38-t0r" eventType="valueChanged" id="yYh-aU-k2b"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="E6h-U6-i6N"/>
+                                            <constraint firstAttribute="width" constant="131" id="vrJ-GJ-1EF"/>
+                                            <constraint firstItem="mlh-z3-IZp" firstAttribute="centerY" secondItem="3Wj-Ba-zyD" secondAttribute="centerY" id="ybK-WB-yJ1"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VT8-Om-fTb">
                                         <rect key="frame" x="0.0" y="68" width="566" height="286"/>
                                         <subviews>
@@ -35,6 +59,9 @@
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5w7-re-ucs">
                                                         <rect key="frame" x="407" y="4" width="118" height="31"/>
+                                                        <connections>
+                                                            <action selector="slider_action:" destination="BYZ-38-t0r" eventType="valueChanged" id="yPq-Sw-A8y"/>
+                                                        </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Volume: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeA-4x-hks">
                                                         <rect key="frame" x="8" y="8" width="67" height="21"/>
@@ -65,6 +92,9 @@
                                                             <segment title="Warner"/>
                                                         </segments>
                                                         <color key="tintColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="choosedChannel:" destination="BYZ-38-t0r" eventType="valueChanged" id="haZ-Uo-UcP"/>
+                                                        </connections>
                                                     </segmentedControl>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorite: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-Sb-Z1N">
                                                         <rect key="frame" x="75" y="8" width="70" height="21"/>
@@ -216,27 +246,6 @@
                                             <constraint firstItem="LMU-ON-vtO" firstAttribute="top" secondItem="b4r-hD-2tU" secondAttribute="bottom" constant="5" id="pee-rI-gMw"/>
                                             <constraint firstAttribute="trailing" secondItem="b4r-hD-2tU" secondAttribute="trailing" id="sth-wb-rYq"/>
                                             <constraint firstItem="XlH-Sd-hc1" firstAttribute="top" secondItem="VT8-Om-fTb" secondAttribute="top" id="yKH-18-T8I"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzV-t9-hWO">
-                                        <rect key="frame" x="215" y="8" width="131" height="52"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Power: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wj-Ba-zyD">
-                                                <rect key="frame" x="8" y="16" width="57" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlh-z3-IZp">
-                                                <rect key="frame" x="73" y="11" width="51" height="31.5"/>
-                                            </switch>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="52" id="E6h-U6-i6N"/>
-                                            <constraint firstAttribute="width" constant="131" id="vrJ-GJ-1EF"/>
-                                            <constraint firstItem="mlh-z3-IZp" firstAttribute="centerY" secondItem="3Wj-Ba-zyD" secondAttribute="centerY" id="ybK-WB-yJ1"/>
                                         </constraints>
                                     </view>
                                 </subviews>
