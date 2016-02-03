@@ -20,10 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ui5-HN-dzv" userLabel="v_top">
-                                <rect key="frame" x="20" y="51" width="560" height="167"/>
-                                <color key="backgroundColor" red="0.52477242934550317" green="1" blue="0.74997200608295356" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-QU-qQq" userLabel="v_down">
                                 <rect key="frame" x="20" y="226" width="560" height="354"/>
                                 <subviews>
@@ -259,6 +255,38 @@
                                     <constraint firstItem="VT8-Om-fTb" firstAttribute="top" secondItem="vzV-t9-hWO" secondAttribute="bottom" id="a1b-Qt-oW7"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ui5-HN-dzv" userLabel="v_top">
+                                <rect key="frame" x="20" y="51" width="560" height="167"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Channel: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO9-SB-4YZ">
+                                        <rect key="frame" x="242" y="88" width="72" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Volume: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx3-sn-v1x">
+                                        <rect key="frame" x="242" y="59" width="67" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Power: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-0s-pzB">
+                                        <rect key="frame" x="252" y="30" width="57" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52477242934550317" green="1" blue="0.74997200608295356" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gO9-SB-4YZ" firstAttribute="top" secondItem="Sx3-sn-v1x" secondAttribute="bottom" id="5XR-Iz-jYh"/>
+                                    <constraint firstItem="vA3-0s-pzB" firstAttribute="centerX" secondItem="ui5-HN-dzv" secondAttribute="centerX" id="8Qv-da-78o"/>
+                                    <constraint firstItem="gO9-SB-4YZ" firstAttribute="centerX" secondItem="ui5-HN-dzv" secondAttribute="centerX" id="BCz-7F-GPe"/>
+                                    <constraint firstItem="Sx3-sn-v1x" firstAttribute="centerX" secondItem="ui5-HN-dzv" secondAttribute="centerX" id="FST-0q-K1Q"/>
+                                    <constraint firstItem="Sx3-sn-v1x" firstAttribute="top" secondItem="vA3-0s-pzB" secondAttribute="bottom" id="PFF-S4-Jgf"/>
+                                    <constraint firstAttribute="bottom" secondItem="gO9-SB-4YZ" secondAttribute="bottom" id="kUm-UQ-9d4"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93672180645524428" blue="0.29094828286793706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -274,6 +302,11 @@
                             <constraint firstItem="ui5-HN-dzv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uCi-Dk-oYg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lb_channel" destination="gO9-SB-4YZ" id="euw-GG-3sY"/>
+                        <outlet property="lb_power" destination="vA3-0s-pzB" id="gFo-DN-EuC"/>
+                        <outlet property="lb_volume" destination="Sx3-sn-v1x" id="wXY-Pz-iXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

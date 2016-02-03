@@ -13,9 +13,23 @@ class ViewController: UIViewController {
     var power = "ON"
     var volume = 15
     var channel = 13
+    
+    
+    
+    
+    
+    @IBOutlet weak var lb_power: UILabel!
+    
+    @IBOutlet weak var lb_volume: UILabel!
+    
+    @IBOutlet weak var lb_channel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        update();
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +57,7 @@ class ViewController: UIViewController {
     @IBAction func choosedChannel(sender: UISegmentedControl) {
         switch(sender.selectedSegmentIndex){
         case 0:
-            channel=13
+            channel = 13
             break
         case 1:
             channel = 27
@@ -53,7 +67,6 @@ class ViewController: UIViewController {
             break;
         case 3:
             channel = 32
-            
             break;
         default:
             channel = 1;
@@ -65,11 +78,14 @@ class ViewController: UIViewController {
     
     
     func update(){
-        
-        
+        lb_power.text = "Power " + power
+        lb_volume.text = "Volume " + String(volume)
+        lb_channel.text = "Channel " + String( channel)
     }
     func changeChannel(x:Int){
         
+        
+        update();
     }
 
 }
