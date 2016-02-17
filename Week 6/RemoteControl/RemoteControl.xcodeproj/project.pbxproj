@@ -487,6 +487,7 @@
 				AE6340141C58573800510D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE6340151C58573800510D08 /* Build configuration list for PBXNativeTarget "RemoteControlTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +496,7 @@
 				AE6340171C58573800510D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE6340181C58573800510D08 /* Build configuration list for PBXNativeTarget "RemoteControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +505,7 @@
 				AE63401A1C58573800510D08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
