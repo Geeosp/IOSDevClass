@@ -14,6 +14,7 @@
 		AE633FF81C58573800510D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE633FF61C58573800510D08 /* LaunchScreen.storyboard */; };
 		AE6340031C58573800510D08 /* RemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6340021C58573800510D08 /* RemoteControlTests.swift */; };
 		AE63400E1C58573800510D08 /* RemoteControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63400D1C58573800510D08 /* RemoteControlUITests.swift */; };
+		AEADCA101C7532BF002AB8F0 /* DvrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEADCA0F1C7532BF002AB8F0 /* DvrController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AE6340091C58573800510D08 /* RemoteControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE63400D1C58573800510D08 /* RemoteControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlUITests.swift; sourceTree = "<group>"; };
 		AE63400F1C58573800510D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEADCA0F1C7532BF002AB8F0 /* DvrController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DvrController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AE633FF41C58573800510D08 /* Assets.xcassets */,
 				AE633FF61C58573800510D08 /* LaunchScreen.storyboard */,
 				AE633FF91C58573800510D08 /* Info.plist */,
+				AEADCA0F1C7532BF002AB8F0 /* DvrController.swift */,
 			);
 			path = RemoteControl;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				AE633FF01C58573800510D08 /* ViewController.swift in Sources */,
 				AE633FEE1C58573800510D08 /* AppDelegate.swift in Sources */,
+				AEADCA101C7532BF002AB8F0 /* DvrController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
