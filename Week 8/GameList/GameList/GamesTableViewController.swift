@@ -13,7 +13,7 @@ struct Game{
 }
 let gamelist = [
     Game(name:"Uncharted 4",
-        description: "äsiuhdaudhaiuhd",
+        description: "Several years after his last adventure, retired fortune hunter, Nathan Drake, is forced back into the world of thieves.  With the stakes much more personal, Drake embarks on a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure.  His greatest adventure will test his physical limits, his resolve, and ultimately what he’s willing to sacrifice to save the ones he loves.",
         console:"PS4"
     ),
     Game(name:"Batman Arkham Knight",
@@ -29,12 +29,12 @@ let gamelist = [
         console:"Nintendo 64"
     ),
     Game(name:"Boderlands",
-        description: "äsiuhdaudhaiuhd",
+        description: "Borderlands is a series of action role-playing first-person shooter video games in a space western/science fantasy setting, developed by Gearbox Software and published by 2K Games for multiple platforms.The series consists of three games, each with multiple downloadable content packs: Borderlands (2009), Borderlands 2 (2012) and Borderlands: The Pre-Sequel! (by 2K Australia, 2014).",
         console: "PC"
         
     ),
     Game(name:"Deus X",
-        description: "äsiuhdaudhaiuhd",
+        description: "Deus Ex: Mankind Divided is an upcoming cyberpunk-themed action role-playing video game—combining first-person shooter, stealth and role-playing elements[2]—developed by Eidos Montreal and published by Square Enix as a sequel to the 2011 Deus Ex: Human Revolution. Set two years after Human Revolution, Mankind Divided features the return of Adam Jensen, with new technology and body augmentations. It is played from the first-person perspective, with a third-person perspective cover system.",
         console:"PS4"
     ),
     Game(name:"Üncharted 4",
