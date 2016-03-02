@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEDA88B41C7E731700B48253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA88B31C7E731700B48253 /* AppDelegate.swift */; };
+		AEDA88B61C7E731700B48253 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA88B51C7E731700B48253 /* FirstViewController.swift */; };
+		AEDA88B81C7E731700B48253 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA88B71C7E731700B48253 /* SecondViewController.swift */; };
+		AEDA88BB1C7E731700B48253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDA88B91C7E731700B48253 /* Main.storyboard */; };
+		AEDA88BD1C7E731700B48253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDA88BC1C7E731700B48253 /* Assets.xcassets */; };
+		AEDA88C01C7E731700B48253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDA88BE1C7E731700B48253 /* LaunchScreen.storyboard */; };
+		AEDA88CB1C7E731700B48253 /* RemoteControlTabbedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA88CA1C7E731700B48253 /* RemoteControlTabbedTests.swift */; };
+		AEDA88D61C7E731700B48253 /* RemoteControlTabbedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA88D51C7E731700B48253 /* RemoteControlTabbedUITests.swift */; };
+		AEDA88E61C7E741D00B48253 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDA88E51C7E741D00B48253 /* ThirdViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEDA88C71C7E731700B48253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEDA88A81C7E731700B48253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEDA88AF1C7E731700B48253;
+			remoteInfo = RemoteControlTabbed;
+		};
+		AEDA88D21C7E731700B48253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEDA88A81C7E731700B48253 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEDA88AF1C7E731700B48253;
+			remoteInfo = RemoteControlTabbed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEDA88B01C7E731700B48253 /* RemoteControlTabbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControlTabbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDA88B31C7E731700B48253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEDA88B51C7E731700B48253 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		AEDA88B71C7E731700B48253 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AEDA88BA1C7E731700B48253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEDA88BC1C7E731700B48253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEDA88BF1C7E731700B48253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEDA88C11C7E731700B48253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDA88C61C7E731700B48253 /* RemoteControlTabbedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlTabbedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDA88CA1C7E731700B48253 /* RemoteControlTabbedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlTabbedTests.swift; sourceTree = "<group>"; };
+		AEDA88CC1C7E731700B48253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDA88D11C7E731700B48253 /* RemoteControlTabbedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlTabbedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDA88D51C7E731700B48253 /* RemoteControlTabbedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlTabbedUITests.swift; sourceTree = "<group>"; };
+		AEDA88D71C7E731700B48253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDA88E51C7E741D00B48253 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEDA88AD1C7E731700B48253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDA88C31C7E731700B48253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDA88CE1C7E731700B48253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEDA88A71C7E731700B48253 = {
+			isa = PBXGroup;
+			children = (
+				AEDA88B21C7E731700B48253 /* RemoteControlTabbed */,
+				AEDA88C91C7E731700B48253 /* RemoteControlTabbedTests */,
+				AEDA88D41C7E731700B48253 /* RemoteControlTabbedUITests */,
+				AEDA88B11C7E731700B48253 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEDA88B11C7E731700B48253 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA88B01C7E731700B48253 /* RemoteControlTabbed.app */,
+				AEDA88C61C7E731700B48253 /* RemoteControlTabbedTests.xctest */,
+				AEDA88D11C7E731700B48253 /* RemoteControlTabbedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEDA88B21C7E731700B48253 /* RemoteControlTabbed */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA88B31C7E731700B48253 /* AppDelegate.swift */,
+				AEDA88B51C7E731700B48253 /* FirstViewController.swift */,
+				AEDA88B71C7E731700B48253 /* SecondViewController.swift */,
+				AEDA88E51C7E741D00B48253 /* ThirdViewController.swift */,
+				AEDA88B91C7E731700B48253 /* Main.storyboard */,
+				AEDA88BC1C7E731700B48253 /* Assets.xcassets */,
+				AEDA88BE1C7E731700B48253 /* LaunchScreen.storyboard */,
+				AEDA88C11C7E731700B48253 /* Info.plist */,
+			);
+			path = RemoteControlTabbed;
+			sourceTree = "<group>";
+		};
+		AEDA88C91C7E731700B48253 /* RemoteControlTabbedTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA88CA1C7E731700B48253 /* RemoteControlTabbedTests.swift */,
+				AEDA88CC1C7E731700B48253 /* Info.plist */,
+			);
+			path = RemoteControlTabbedTests;
+			sourceTree = "<group>";
+		};
+		AEDA88D41C7E731700B48253 /* RemoteControlTabbedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA88D51C7E731700B48253 /* RemoteControlTabbedUITests.swift */,
+				AEDA88D71C7E731700B48253 /* Info.plist */,
+			);
+			path = RemoteControlTabbedUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEDA88AF1C7E731700B48253 /* RemoteControlTabbed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDA88DA1C7E731700B48253 /* Build configuration list for PBXNativeTarget "RemoteControlTabbed" */;
+			buildPhases = (
+				AEDA88AC1C7E731700B48253 /* Sources */,
+				AEDA88AD1C7E731700B48253 /* Frameworks */,
+				AEDA88AE1C7E731700B48253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteControlTabbed;
+			productName = RemoteControlTabbed;
+			productReference = AEDA88B01C7E731700B48253 /* RemoteControlTabbed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEDA88C51C7E731700B48253 /* RemoteControlTabbedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDA88DD1C7E731700B48253 /* Build configuration list for PBXNativeTarget "RemoteControlTabbedTests" */;
+			buildPhases = (
+				AEDA88C21C7E731700B48253 /* Sources */,
+				AEDA88C31C7E731700B48253 /* Frameworks */,
+				AEDA88C41C7E731700B48253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEDA88C81C7E731700B48253 /* PBXTargetDependency */,
+			);
+			name = RemoteControlTabbedTests;
+			productName = RemoteControlTabbedTests;
+			productReference = AEDA88C61C7E731700B48253 /* RemoteControlTabbedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEDA88D01C7E731700B48253 /* RemoteControlTabbedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDA88E01C7E731700B48253 /* Build configuration list for PBXNativeTarget "RemoteControlTabbedUITests" */;
+			buildPhases = (
+				AEDA88CD1C7E731700B48253 /* Sources */,
+				AEDA88CE1C7E731700B48253 /* Frameworks */,
+				AEDA88CF1C7E731700B48253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEDA88D31C7E731700B48253 /* PBXTargetDependency */,
+			);
+			name = RemoteControlTabbedUITests;
+			productName = RemoteControlTabbedUITests;
+			productReference = AEDA88D11C7E731700B48253 /* RemoteControlTabbedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEDA88A81C7E731700B48253 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Geovane Silva Pereira";
+				TargetAttributes = {
+					AEDA88AF1C7E731700B48253 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5J7CBUH85M;
+					};
+					AEDA88C51C7E731700B48253 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5J7CBUH85M;
+						TestTargetID = AEDA88AF1C7E731700B48253;
+					};
+					AEDA88D01C7E731700B48253 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 5J7CBUH85M;
+						TestTargetID = AEDA88AF1C7E731700B48253;
+					};
+				};
+			};
+			buildConfigurationList = AEDA88AB1C7E731700B48253 /* Build configuration list for PBXProject "RemoteControlTabbed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEDA88A71C7E731700B48253;
+			productRefGroup = AEDA88B11C7E731700B48253 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEDA88AF1C7E731700B48253 /* RemoteControlTabbed */,
+				AEDA88C51C7E731700B48253 /* RemoteControlTabbedTests */,
+				AEDA88D01C7E731700B48253 /* RemoteControlTabbedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEDA88AE1C7E731700B48253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDA88C01C7E731700B48253 /* LaunchScreen.storyboard in Resources */,
+				AEDA88BD1C7E731700B48253 /* Assets.xcassets in Resources */,
+				AEDA88BB1C7E731700B48253 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDA88C41C7E731700B48253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDA88CF1C7E731700B48253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEDA88AC1C7E731700B48253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDA88B81C7E731700B48253 /* SecondViewController.swift in Sources */,
+				AEDA88B41C7E731700B48253 /* AppDelegate.swift in Sources */,
+				AEDA88E61C7E741D00B48253 /* ThirdViewController.swift in Sources */,
+				AEDA88B61C7E731700B48253 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDA88C21C7E731700B48253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDA88CB1C7E731700B48253 /* RemoteControlTabbedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDA88CD1C7E731700B48253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDA88D61C7E731700B48253 /* RemoteControlTabbedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEDA88C81C7E731700B48253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEDA88AF1C7E731700B48253 /* RemoteControlTabbed */;
+			targetProxy = AEDA88C71C7E731700B48253 /* PBXContainerItemProxy */;
+		};
+		AEDA88D31C7E731700B48253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEDA88AF1C7E731700B48253 /* RemoteControlTabbed */;
+			targetProxy = AEDA88D21C7E731700B48253 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEDA88B91C7E731700B48253 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEDA88BA1C7E731700B48253 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEDA88BE1C7E731700B48253 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEDA88BF1C7E731700B48253 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEDA88D81C7E731700B48253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEDA88D91C7E731700B48253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEDA88DB1C7E731700B48253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemoteControlTabbed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.depaul.gsilvape.RemoteControlTabbed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEDA88DC1C7E731700B48253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemoteControlTabbed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.depaul.gsilvape.RemoteControlTabbed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AEDA88DE1C7E731700B48253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RemoteControlTabbedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.depaul.gsilvape.RemoteControlTabbedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteControlTabbed.app/RemoteControlTabbed";
+			};
+			name = Debug;
+		};
+		AEDA88DF1C7E731700B48253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RemoteControlTabbedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.depaul.gsilvape.RemoteControlTabbedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteControlTabbed.app/RemoteControlTabbed";
+			};
+			name = Release;
+		};
+		AEDA88E11C7E731700B48253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RemoteControlTabbedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.depaul.gsilvape.RemoteControlTabbedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RemoteControlTabbed;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AEDA88E21C7E731700B48253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RemoteControlTabbedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.depaul.gsilvape.RemoteControlTabbedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RemoteControlTabbed;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEDA88AB1C7E731700B48253 /* Build configuration list for PBXProject "RemoteControlTabbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDA88D81C7E731700B48253 /* Debug */,
+				AEDA88D91C7E731700B48253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDA88DA1C7E731700B48253 /* Build configuration list for PBXNativeTarget "RemoteControlTabbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDA88DB1C7E731700B48253 /* Debug */,
+				AEDA88DC1C7E731700B48253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEDA88DD1C7E731700B48253 /* Build configuration list for PBXNativeTarget "RemoteControlTabbedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDA88DE1C7E731700B48253 /* Debug */,
+				AEDA88DF1C7E731700B48253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEDA88E01C7E731700B48253 /* Build configuration list for PBXNativeTarget "RemoteControlTabbedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDA88E11C7E731700B48253 /* Debug */,
+				AEDA88E21C7E731700B48253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEDA88A81C7E731700B48253 /* Project object */;
+}
