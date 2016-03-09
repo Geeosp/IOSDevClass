@@ -93,13 +93,15 @@ class ViewController: UIViewController,UISearchBarDelegate,MKMapViewDelegate {
     @IBAction func savePressed(sender: UIBarButtonItem) {
         let name = tf_name.text;
         let city = City(name:name!, latitude:latitude, longitude:longitude);
-        
+        cities.append(city);
+       // self.dismissViewControllerAnimated(true, completion: nil)
+        navigationController!.popViewControllerAnimated(true)//dismiss segue
+    print(cities.count)
     }
+    
     func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        var center = self.mapView.centerCoordinate
-        print("oi");
-        print(center.latitude)
-        print(center.longitude)
+        let center = self.mapView.centerCoordinate
+       
         
         self.pointAnnotation.coordinate = center;
         
@@ -107,11 +109,8 @@ class ViewController: UIViewController,UISearchBarDelegate,MKMapViewDelegate {
         //self.mapView.centerCoordinate = self.pointAnnotation.coordinate
         self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
        // self.zoomMap(center)
-        
-        
-        
     }
-
+    
 
 }
 
