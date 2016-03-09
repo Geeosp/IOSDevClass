@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-class ViewController: UIViewController,UISearchBarDelegate {
+class ViewController: UIViewController,UISearchBarDelegate,MKMapViewDelegate {
     var searchController:UISearchController!
     var annotation:MKAnnotation!
     var localSearchRequest:MKLocalSearchRequest!
@@ -29,6 +29,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         searchController = UISearchController(searchResultsController: nil)
         searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchBar.delegate = self
+        self.mapView.delegate = self
         presentViewController(searchController, animated: true, completion: nil)
     }
     
@@ -91,7 +92,23 @@ class ViewController: UIViewController,UISearchBarDelegate {
     
     @IBAction func savePressed(sender: UIBarButtonItem) {
         let name = tf_name.text;
-        let city = City(name:name, latitude:latitude, longitude:longitude);
+        let city = City(name:name!, latitude:latitude, longitude:longitude);
+        
+    }
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        var center = self.mapView.centerCoordinate
+        print("oi");
+        print(center.latitude)
+        print(center.longitude)
+        
+        self.pointAnnotation.coordinate = center;
+        
+        self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
+        //self.mapView.centerCoordinate = self.pointAnnotation.coordinate
+        self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
+       // self.zoomMap(center)
+        
+        
         
     }
 

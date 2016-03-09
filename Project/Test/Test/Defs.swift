@@ -8,7 +8,7 @@
 
 import Foundation
 struct City{
-    var name :String,
-    var latitude:Double,
+    var name:String
+    var latitude:Double
     var longitude:Double
 }
