@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     var game: Game?
     
     override func viewWillAppear(animated: Bool) {
-        if let g = game {
-       // titleLabel.text = w.name  descriptionLabel.text = w.longDescription
-        }
+       
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +20,10 @@ class ViewController: UIViewController {
         name.text = game?.name;
         console.text = game?.console;
         descritption.text = game?.description
+        let image = game?.image;
+         imageView.image = UIImage(named: image!)
+   
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +32,7 @@ class ViewController: UIViewController {
     }
 
     
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var descritption: UITextView!
     
