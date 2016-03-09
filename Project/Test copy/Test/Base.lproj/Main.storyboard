@@ -68,13 +68,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="1245"/>
+            <point key="canvasLocation" x="1571" y="1229"/>
         </scene>
         <!--Cities-->
         <scene sceneID="mh3-r8-lJg">
             <objects>
                 <tableViewController id="yk8-fk-Vjx" customClass="CitiesTableViewController" customModule="FirstFlake" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="rvY-o7-Z7a">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="rvY-o7-Z7a">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,7 +100,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="lb_cityname" destination="OwY-E3-KHH" id="jvH-O1-PA5"/>
-                                    <segue destination="FeQ-s3-xP4" kind="show" id="YTf-XA-05n"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -119,32 +118,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7N-0n-LaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="1229"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="Txo-Ha-ER8">
-            <objects>
-                <viewController id="FeQ-s3-xP4" customClass="CityDetailViewController" customModule="FirstFlake" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cmb-i0-gsI"/>
-                        <viewControllerLayoutGuide type="bottom" id="ldn-OZ-pj4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CBi-hl-IOc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="ebM-yM-8an">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="mJ7-Oj-bRz">
-                            <connections>
-                                <action selector="deletePressed:" destination="FeQ-s3-xP4" id="bOJ-PA-ry9"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h5p-Ch-cqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="327" y="2018"/>
+            <point key="canvasLocation" x="575" y="1153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JVx-Db-MZI">

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE99E5EF1C90836D00E10A14 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE99E5EE1C90836D00E10A14 /* CityDetailViewController.swift */; };
 		AEAA45751C8FADBF00213EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA45741C8FADBF00213EC5 /* AppDelegate.swift */; };
 		AEAA45771C8FADBF00213EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA45761C8FADBF00213EC5 /* ViewController.swift */; };
 		AEAA457A1C8FADBF00213EC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEAA45781C8FADBF00213EC5 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE99E5EE1C90836D00E10A14 /* CityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
 		AEAA45711C8FADBF00213EC5 /* FirstFlake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstFlake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAA45741C8FADBF00213EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAA45761C8FADBF00213EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		AEAA45731C8FADBF00213EC5 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				AE99E5EE1C90836D00E10A14 /* CityDetailViewController.swift */,
 				AEC9D1C61C8FED5D00A6B8B2 /* CitiesTableViewController.swift */,
 				AEAA45741C8FADBF00213EC5 /* AppDelegate.swift */,
 				AEAA45761C8FADBF00213EC5 /* ViewController.swift */,
@@ -275,7 +272,6 @@
 				AEAA45771C8FADBF00213EC5 /* ViewController.swift in Sources */,
 				AEC9D1CD1C8FF3EF00A6B8B2 /* CityTableViewCell.swift in Sources */,
 				AEC9D1C71C8FED5D00A6B8B2 /* CitiesTableViewController.swift in Sources */,
-				AE99E5EF1C90836D00E10A14 /* CityDetailViewController.swift in Sources */,
 				AEAA45751C8FADBF00213EC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
