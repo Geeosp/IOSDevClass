@@ -13,20 +13,10 @@ class CitiesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem()
-       for i in 1...10{
-            let city = City(name:("City" + String(i)), latitude:Double(i)*4.1, longitude:Double(i)*20.0);
-            cities.append(city);
-        }
-      
-        
+        cities.append(City(name:"Chicago", latitude:41.875163,longitude: -87.626206));
         
    //  self.tableView.reloadData()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     override func viewDidAppear(animated: Bool) {
         self.tableView.reloadData()

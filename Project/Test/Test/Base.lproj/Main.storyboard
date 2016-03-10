@@ -132,7 +132,36 @@
                     <view key="view" contentMode="scaleToFill" id="CBi-hl-IOc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLd-Bh-pgs">
+                                <rect key="frame" x="338" y="135" width="10" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utu-9I-y3h">
+                                <rect key="frame" x="351" y="135" width="19" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9K-WK-f4U">
+                                <rect key="frame" x="264.5" y="135" width="72" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="utu-9I-y3h" firstAttribute="top" secondItem="R9K-WK-f4U" secondAttribute="top" id="5dK-Gx-xpY"/>
+                            <constraint firstItem="R9K-WK-f4U" firstAttribute="centerX" secondItem="CBi-hl-IOc" secondAttribute="centerX" id="J64-ep-wRj"/>
+                            <constraint firstItem="OLd-Bh-pgs" firstAttribute="top" secondItem="R9K-WK-f4U" secondAttribute="top" id="JTC-S9-9sE"/>
+                            <constraint firstItem="R9K-WK-f4U" firstAttribute="top" secondItem="cmb-i0-gsI" secondAttribute="bottom" constant="71" id="Lls-WX-Pti"/>
+                            <constraint firstItem="OLd-Bh-pgs" firstAttribute="top" secondItem="R9K-WK-f4U" secondAttribute="top" id="MYV-BI-9pd"/>
+                            <constraint firstItem="OLd-Bh-pgs" firstAttribute="leading" secondItem="R9K-WK-f4U" secondAttribute="trailing" constant="2" id="bhw-HZ-NYY"/>
+                            <constraint firstItem="utu-9I-y3h" firstAttribute="leading" secondItem="OLd-Bh-pgs" secondAttribute="trailing" constant="2" id="mgq-4w-NPi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ebM-yM-8an">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="mJ7-Oj-bRz">
