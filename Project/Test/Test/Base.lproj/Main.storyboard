@@ -151,14 +151,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="4Qx-DM-bL9">
+                                <rect key="frame" x="0.0" y="90" width="600" height="2.5"/>
+                                <color key="progressTintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="utu-9I-y3h" firstAttribute="top" secondItem="R9K-WK-f4U" secondAttribute="top" id="5dK-Gx-xpY"/>
+                            <constraint firstItem="4Qx-DM-bL9" firstAttribute="top" secondItem="cmb-i0-gsI" secondAttribute="bottom" id="850-EW-wSg"/>
+                            <constraint firstItem="4Qx-DM-bL9" firstAttribute="leading" secondItem="CBi-hl-IOc" secondAttribute="leading" id="9dI-sf-ExN"/>
                             <constraint firstItem="R9K-WK-f4U" firstAttribute="centerX" secondItem="CBi-hl-IOc" secondAttribute="centerX" id="J64-ep-wRj"/>
                             <constraint firstItem="OLd-Bh-pgs" firstAttribute="top" secondItem="R9K-WK-f4U" secondAttribute="top" id="JTC-S9-9sE"/>
                             <constraint firstItem="R9K-WK-f4U" firstAttribute="top" secondItem="cmb-i0-gsI" secondAttribute="bottom" constant="71" id="Lls-WX-Pti"/>
                             <constraint firstItem="OLd-Bh-pgs" firstAttribute="top" secondItem="R9K-WK-f4U" secondAttribute="top" id="MYV-BI-9pd"/>
+                            <constraint firstAttribute="trailing" secondItem="4Qx-DM-bL9" secondAttribute="trailing" id="YU3-EI-GZX"/>
                             <constraint firstItem="OLd-Bh-pgs" firstAttribute="leading" secondItem="R9K-WK-f4U" secondAttribute="trailing" constant="2" id="bhw-HZ-NYY"/>
                             <constraint firstItem="utu-9I-y3h" firstAttribute="leading" secondItem="OLd-Bh-pgs" secondAttribute="trailing" constant="2" id="mgq-4w-NPi"/>
                         </constraints>
@@ -170,6 +178,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="progressView" destination="4Qx-DM-bL9" id="PBB-Ty-eu4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5p-Ch-cqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
