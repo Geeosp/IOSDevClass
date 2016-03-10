@@ -14,6 +14,8 @@ class CitiesTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = editButtonItem()
         cities.append(City(name:"Chicago", latitude:41.875163,longitude: -87.626206));
+        cities.append(City(name:"New York", latitude: 40.648053,longitude: -73.956160));
+        cities.append(City(name:"Recife", latitude:-8.139559,longitude:  -34.909153));
         
    //  self.tableView.reloadData()
         
