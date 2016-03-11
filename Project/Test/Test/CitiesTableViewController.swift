@@ -97,7 +97,7 @@ class CitiesTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if let viewController = segue.destinationViewController as? CityDetailViewController {
+        if let viewController = segue.destinationViewController as? CityDetailsTableViewController {
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 viewController.cityIndex = indexPath.row
             }
