@@ -126,12 +126,15 @@
             <objects>
                 <tableViewController id="tGp-Ac-G1v" customClass="CityDetailsTableViewController" customModule="FirstFlake" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="CmP-UD-yUc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="welcomecell" rowHeight="74" id="dc2-3s-NNG" customClass="WelcomeTableViewCell" customModule="FirstFlake">
+                                <rect key="frame" x="0.0" y="92" width="600" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dc2-3s-NNG" id="4Jv-L9-X5F">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winter is coming!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPA-Sb-xrs">
@@ -168,9 +171,11 @@
                                     <outlet property="welcome_lb" destination="hPA-Sb-xrs" id="SWm-QM-Rel"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="temperaturecell" rowHeight="83" id="7vJ-Rr-Mfm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="temperaturecell" rowHeight="83" id="7vJ-Rr-Mfm" customClass="ForecastTemperatureTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="166" width="600" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7vJ-Rr-Mfm" id="QhT-ki-XbD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYV-gv-OU0">
@@ -207,12 +212,12 @@
                                             <exclude reference="FSe-tL-47P"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="RdM-Dv-3ko"/>
-                                            <exclude reference="sv6-G6-zha"/>
-                                            <exclude reference="dkz-Hs-l8A"/>
-                                            <exclude reference="kdK-XN-L3c"/>
                                             <exclude reference="A6P-j5-LSw"/>
                                             <exclude reference="drK-oB-QKl"/>
+                                            <exclude reference="dkz-Hs-l8A"/>
+                                            <exclude reference="kdK-XN-L3c"/>
+                                            <exclude reference="RdM-Dv-3ko"/>
+                                            <exclude reference="sv6-G6-zha"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -222,19 +227,24 @@
                                             <include reference="FSe-tL-47P"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="RdM-Dv-3ko"/>
-                                            <include reference="sv6-G6-zha"/>
-                                            <include reference="dkz-Hs-l8A"/>
-                                            <include reference="kdK-XN-L3c"/>
                                             <include reference="A6P-j5-LSw"/>
                                             <include reference="drK-oB-QKl"/>
+                                            <include reference="dkz-Hs-l8A"/>
+                                            <include reference="kdK-XN-L3c"/>
+                                            <include reference="RdM-Dv-3ko"/>
+                                            <include reference="sv6-G6-zha"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="temperature_lb" destination="sYV-gv-OU0" id="EtH-DP-Cni"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowhour" rowHeight="43" id="FIN-rf-6LJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowhour" rowHeight="43" id="FIN-rf-6LJ" customClass="ForecastHourTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="249" width="600" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FIN-rf-6LJ" id="lkC-Tq-DFb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it will snow at 15:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKv-4h-aIt">
@@ -267,10 +277,15 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lb_snowhour" destination="kKv-4h-aIt" id="mNj-FZ-uD7"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowday" rowHeight="40" id="Gwv-av-kOl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowday" rowHeight="40" id="Gwv-av-kOl" customClass="ForecastDayTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="292" width="600" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gwv-av-kOl" id="Hma-MC-WVi">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It will snow on Friday!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-OC-iYJ">
@@ -278,6 +293,9 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="119" y="8" width="163.5" height="20.5"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -309,11 +327,58 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lb_snowday" destination="tAd-OC-iYJ" id="p4f-ZG-ZgM"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="none" rowHeight="40" id="3td-Fd-i5A">
+                                <rect key="frame" x="0.0" y="332" width="600" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3td-Fd-i5A" id="auu-lp-ALf">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="forecastiolink" rowHeight="23" id="a1z-NC-Vy9" customClass="ForecastIOTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="332" width="600" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a1z-NC-Vy9" id="qba-sa-uzc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDW-En-yAu">
+                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                            <state key="normal" title="Powered by Forecast.io"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="113" y="-3" width="160" height="30"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="forecastioTappes:" destination="a1z-NC-Vy9" eventType="touchUpInside" id="1Jq-ZP-Qie"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hDW-En-yAu" firstAttribute="centerX" secondItem="qba-sa-uzc" secondAttribute="centerX" id="RTX-zv-15D"/>
+                                        <constraint firstItem="hDW-En-yAu" firstAttribute="centerY" secondItem="qba-sa-uzc" secondAttribute="centerY" id="iw7-oO-qZb"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="hDW-En-yAu"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="RTX-zv-15D"/>
+                                            <exclude reference="iw7-oO-qZb"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="hDW-En-yAu"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="RTX-zv-15D"/>
+                                            <include reference="iw7-oO-qZb"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

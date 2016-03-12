@@ -16,6 +16,7 @@ class CitiesTableViewController: UITableViewController {
         cities.append(City(name:"Chicago", latitude:41.875163,longitude: -87.626206));
         cities.append(City(name:"New York", latitude: 40.648053,longitude: -73.956160));
         cities.append(City(name:"Recife", latitude:-8.139559,longitude:  -34.909153));
+        cities.append(City(name:"Anchorage", latitude:61.117657, longitude: -149.532932));
         
    //  self.tableView.reloadData()
         
