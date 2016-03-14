@@ -240,7 +240,7 @@
                                     <outlet property="temperature_lb" destination="sYV-gv-OU0" id="EtH-DP-Cni"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowhour" rowHeight="43" id="FIN-rf-6LJ" customClass="ForecastHourTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowhour" rowHeight="30" id="FIN-rf-6LJ" customClass="ForecastHourTableViewCell" customModule="FirstFlake" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="249" width="600" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FIN-rf-6LJ" id="lkC-Tq-DFb">
@@ -252,11 +252,16 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="126" y="11" width="149.5" height="20.5"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="kKv-4h-aIt" firstAttribute="centerY" secondItem="lkC-Tq-DFb" secondAttribute="centerY" id="99Z-Ev-Ejg"/>
                                         <constraint firstItem="kKv-4h-aIt" firstAttribute="centerX" secondItem="lkC-Tq-DFb" secondAttribute="centerX" id="bWg-Vp-fWP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="kKv-4h-aIt" secondAttribute="bottom" constant="3" id="kGc-9a-Ehq"/>
+                                        <constraint firstItem="kKv-4h-aIt" firstAttribute="top" secondItem="lkC-Tq-DFb" secondAttribute="topMargin" constant="3" id="oqt-9L-vev"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
@@ -265,6 +270,8 @@
                                         <mask key="constraints">
                                             <exclude reference="99Z-Ev-Ejg"/>
                                             <exclude reference="bWg-Vp-fWP"/>
+                                            <exclude reference="kGc-9a-Ehq"/>
+                                            <exclude reference="oqt-9L-vev"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -274,14 +281,17 @@
                                         <mask key="constraints">
                                             <include reference="99Z-Ev-Ejg"/>
                                             <include reference="bWg-Vp-fWP"/>
+                                            <include reference="kGc-9a-Ehq"/>
+                                            <include reference="oqt-9L-vev"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="8"/>
                                 <connections>
                                     <outlet property="lb_snowhour" destination="kKv-4h-aIt" id="mNj-FZ-uD7"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowday" rowHeight="40" id="Gwv-av-kOl" customClass="ForecastDayTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowday" rowHeight="30" id="Gwv-av-kOl" customClass="ForecastDayTableViewCell" customModule="FirstFlake" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="292" width="600" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gwv-av-kOl" id="Hma-MC-WVi">
@@ -294,7 +304,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="119" y="8" width="163.5" height="20.5"/>
+                                                <rect key="frame" x="119" y="10" width="163.5" height="20.5"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -303,6 +313,7 @@
                                         <constraint firstItem="tAd-OC-iYJ" firstAttribute="centerY" secondItem="Hma-MC-WVi" secondAttribute="centerY" id="FYG-96-vTL"/>
                                         <constraint firstItem="tAd-OC-iYJ" firstAttribute="centerX" secondItem="Hma-MC-WVi" secondAttribute="centerX" id="HFw-vO-bWf"/>
                                         <constraint firstItem="tAd-OC-iYJ" firstAttribute="centerY" secondItem="Hma-MC-WVi" secondAttribute="centerY" id="jGI-dG-vTt"/>
+                                        <constraint firstItem="tAd-OC-iYJ" firstAttribute="top" secondItem="Hma-MC-WVi" secondAttribute="topMargin" constant="3" id="uO8-gd-FlU"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
@@ -313,6 +324,7 @@
                                             <exclude reference="FYG-96-vTL"/>
                                             <exclude reference="HFw-vO-bWf"/>
                                             <exclude reference="jGI-dG-vTt"/>
+                                            <exclude reference="uO8-gd-FlU"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -324,14 +336,16 @@
                                             <include reference="FYG-96-vTL"/>
                                             <include reference="HFw-vO-bWf"/>
                                             <include reference="jGI-dG-vTt"/>
+                                            <include reference="uO8-gd-FlU"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="8"/>
                                 <connections>
                                     <outlet property="lb_snowday" destination="tAd-OC-iYJ" id="p4f-ZG-ZgM"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="none" rowHeight="40" id="3td-Fd-i5A">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="none" rowHeight="24" id="3td-Fd-i5A">
                                 <rect key="frame" x="0.0" y="332" width="600" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3td-Fd-i5A" id="auu-lp-ALf">
@@ -340,18 +354,15 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="forecastiolink" rowHeight="23" id="a1z-NC-Vy9" customClass="ForecastIOTableViewCell" customModule="FirstFlake" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="332" width="600" height="40"/>
+                                <rect key="frame" x="0.0" y="372" width="600" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a1z-NC-Vy9" id="qba-sa-uzc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="23"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDW-En-yAu">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                             <state key="normal" title="Powered by Forecast.io"/>
-                                            <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="113" y="-3" width="160" height="30"/>
-                                            </variation>
                                             <connections>
                                                 <action selector="forecastioTappes:" destination="a1z-NC-Vy9" eventType="touchUpInside" id="1Jq-ZP-Qie"/>
                                             </connections>
