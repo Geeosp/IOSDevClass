@@ -24,13 +24,15 @@ class CityDetailsTableViewController: UITableViewController {
     var snowHour: [NSDate]=[];
     var snowDaily: [NSDate]=[];
     //  @IBOutlet weak var progressView: UIProgressView!
-    
+   
+
     override func viewDidLoad() {
         super.viewDidLoad()
         city = cities[cityIndex]
         self.title = city.name
         //  progressView.setProgress(0, animated: false)
-        reloadData()
+        reloadData();
+         print ("latitude: " + String(city!.latitude ) + "longitude: " + String(city!.longitude));
     }
     func reloadData(){
         // Retrieve current forecast
@@ -123,24 +125,23 @@ class CityDetailsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell :UITableViewCell;
         let index = indexPath.item;
-        print ("row"+String(index));
-        //cell = tableView.dequeueReusableCellWithIdentifier("forecastiolink", forIndexPath: indexPath)
+               //cell = tableView.dequeueReusableCellWithIdentifier("forecastiolink", forIndexPath: indexPath)
         if(complete){
             if index == 0 {
                 let aux = tableView.dequeueReusableCellWithIdentifier("welcomecell", forIndexPath: indexPath) as! WelcomeTableViewCell
                 var text = "";
                 switch welcomeType{
                 case .noSnow:
-                    text = "Don`t give up!"
+                    text = "Don't give up!"
                     break;
                 case .snowToday:
-                    text = "It`s snow day!"
+                    text = "It's snow day!"
                     break;
                 case .snowingNow:
                     text = "Look at the window!"
                     break;
                 case .snowThisWeek:
-                    text = "Snow is Comming"
+                    text = "Snow is Coming"
                     break;
                 }
                 aux.welcome_lb.text = text;
@@ -219,6 +220,28 @@ class CityDetailsTableViewController: UITableViewController {
         }
         
         return cell;
+    }
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let index = indexPath.item;
+        if(complete){
+            if index == 0 {
+                return 120;
+            } else if index == 1{
+                return 140;
+            }else if index>=2{
+                if index < 2 + snowHour.count{
+                    return 50;
+                }else if index < 2 + self.snowHour.count + snowDaily.count{
+                    return 50;
+                }else{
+                    return 60;
+                }
+            }else{
+                return 25;
+            }
+        }else{
+            return 25;
+        }
     }
     
     

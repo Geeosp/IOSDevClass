@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -74,25 +75,31 @@
         <scene sceneID="mh3-r8-lJg">
             <objects>
                 <tableViewController id="yk8-fk-Vjx" customClass="CitiesTableViewController" customModule="FirstFlake" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="rvY-o7-Z7a">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="rvY-o7-Z7a">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.47843137254901957" green="0.65490196078431373" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.94117647059999998" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="basic" rowHeight="77" id="4Qd-Ww-bss" customClass="CityTableViewCell" customModule="FirstFlake">
                                 <rect key="frame" x="0.0" y="92" width="600" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Qd-Ww-bss" id="ygu-Ww-FoB">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="76.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwY-E3-KHH">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwY-E3-KHH">
                                             <rect key="frame" x="18" y="23" width="121" height="31.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                            <color key="textColor" red="0.90980392156862744" green="0.95294117647058818" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="18" y="19.5" width="129.5" height="34.5"/>
+                                            </variation>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.47843137254901957" green="0.65490196078431373" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="OwY-E3-KHH" firstAttribute="centerY" secondItem="ygu-Ww-FoB" secondAttribute="centerY" id="CgX-0a-Y7u"/>
                                         <constraint firstItem="OwY-E3-KHH" firstAttribute="leading" secondItem="ygu-Ww-FoB" secondAttribute="leadingMargin" constant="10" id="IO1-oD-TlR"/>
@@ -121,14 +128,14 @@
             </objects>
             <point key="canvasLocation" x="354" y="1321"/>
         </scene>
-        <!--Title-->
+        <!--City-->
         <scene sceneID="oY4-8m-jIO">
             <objects>
                 <tableViewController id="tGp-Ac-G1v" customClass="CityDetailsTableViewController" customModule="FirstFlake" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="CmP-UD-yUc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="CmP-UD-yUc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="welcomecell" rowHeight="74" id="dc2-3s-NNG" customClass="WelcomeTableViewCell" customModule="FirstFlake">
                                 <rect key="frame" x="0.0" y="92" width="600" height="74"/>
@@ -139,11 +146,12 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winter is coming!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPA-Sb-xrs">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                            <color key="textColor" red="0.80784313725490198" green="0.8784313725490196" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.21176470588235294" green="0.40000000000000002" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="hPA-Sb-xrs" firstAttribute="centerY" secondItem="4Jv-L9-X5F" secondAttribute="centerY" id="WE5-KB-LSS"/>
                                         <constraint firstItem="hPA-Sb-xrs" firstAttribute="centerX" secondItem="4Jv-L9-X5F" secondAttribute="centerX" id="ogU-9z-jZS"/>
@@ -171,32 +179,42 @@
                                     <outlet property="welcome_lb" destination="hPA-Sb-xrs" id="SWm-QM-Rel"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="temperaturecell" rowHeight="83" id="7vJ-Rr-Mfm" customClass="ForecastTemperatureTableViewCell" customModule="FirstFlake" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="temperaturecell" rowHeight="80" id="7vJ-Rr-Mfm" customClass="ForecastTemperatureTableViewCell" customModule="FirstFlake" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="166" width="600" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7vJ-Rr-Mfm" id="QhT-ki-XbD">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYV-gv-OU0">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leB-yv-yyg">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.47843137254901957" green="0.65490196078431373" blue="0.81568627450980391" alpha="0.57651442307692302" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="227" y="14" width="15" height="24"/>
+                                            </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSe-tL-47P">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
+                                            <color key="textColor" red="0.21176470588235294" green="0.40000000000000002" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="244" y="14" width="17" height="37.5"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYV-gv-OU0">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="46"/>
+                                            <color key="textColor" red="0.21176470588235294" green="0.40000000000000002" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="175.5" y="14" width="49.5" height="55.5"/>
+                                            </variation>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.80784313725490198" green="0.8784313725490196" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="FSe-tL-47P" firstAttribute="top" secondItem="sYV-gv-OU0" secondAttribute="top" id="A6P-j5-LSw"/>
                                         <constraint firstItem="sYV-gv-OU0" firstAttribute="centerX" secondItem="QhT-ki-XbD" secondAttribute="centerX" id="RdM-Dv-3ko"/>
@@ -207,9 +225,9 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
-                                            <exclude reference="sYV-gv-OU0"/>
                                             <exclude reference="leB-yv-yyg"/>
                                             <exclude reference="FSe-tL-47P"/>
+                                            <exclude reference="sYV-gv-OU0"/>
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="A6P-j5-LSw"/>
@@ -222,9 +240,9 @@
                                     </variation>
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
-                                            <include reference="sYV-gv-OU0"/>
                                             <include reference="leB-yv-yyg"/>
                                             <include reference="FSe-tL-47P"/>
+                                            <include reference="sYV-gv-OU0"/>
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="A6P-j5-LSw"/>
@@ -241,22 +259,23 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowhour" rowHeight="30" id="FIN-rf-6LJ" customClass="ForecastHourTableViewCell" customModule="FirstFlake" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="249" width="600" height="43"/>
+                                <rect key="frame" x="0.0" y="249" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FIN-rf-6LJ" id="lkC-Tq-DFb">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it will snow at 15:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKv-4h-aIt">
                                             <rect key="frame" x="20" y="20" width="121" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="19"/>
+                                            <color key="textColor" red="0.55294117647058827" green="0.68627450980392157" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="126" y="11" width="149.5" height="20.5"/>
+                                                <rect key="frame" x="139.5" y="11" width="122.5" height="8"/>
                                             </variation>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.94117647059999998" green="0.96470588239999999" blue="0.96470588239999999" alpha="0.89621375800981595" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="kKv-4h-aIt" firstAttribute="centerY" secondItem="lkC-Tq-DFb" secondAttribute="centerY" id="99Z-Ev-Ejg"/>
                                         <constraint firstItem="kKv-4h-aIt" firstAttribute="centerX" secondItem="lkC-Tq-DFb" secondAttribute="centerX" id="bWg-Vp-fWP"/>
@@ -281,8 +300,8 @@
                                         <mask key="constraints">
                                             <include reference="99Z-Ev-Ejg"/>
                                             <include reference="bWg-Vp-fWP"/>
-                                            <include reference="kGc-9a-Ehq"/>
-                                            <include reference="oqt-9L-vev"/>
+                                            <exclude reference="kGc-9a-Ehq"/>
+                                            <exclude reference="oqt-9L-vev"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -292,22 +311,20 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="snowday" rowHeight="30" id="Gwv-av-kOl" customClass="ForecastDayTableViewCell" customModule="FirstFlake" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="292" width="600" height="40"/>
+                                <rect key="frame" x="0.0" y="279" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gwv-av-kOl" id="Hma-MC-WVi">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It will snow on Friday!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-OC-iYJ">
                                             <rect key="frame" x="20" y="20" width="121" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="19"/>
+                                            <color key="textColor" red="0.80784313725490198" green="0.8784313725490196" blue="0.93333333333333335" alpha="0.90109375000000003" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="119" y="10" width="163.5" height="20.5"/>
-                                            </variation>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.21176470589999999" green="0.40000000000000002" blue="0.59215686270000001" alpha="0.53664206288343563" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="tAd-OC-iYJ" firstAttribute="centerX" secondItem="Hma-MC-WVi" secondAttribute="centerX" id="2CE-7X-qZG"/>
                                         <constraint firstItem="tAd-OC-iYJ" firstAttribute="centerY" secondItem="Hma-MC-WVi" secondAttribute="centerY" id="FYG-96-vTL"/>
@@ -345,16 +362,16 @@
                                     <outlet property="lb_snowday" destination="tAd-OC-iYJ" id="p4f-ZG-ZgM"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="none" rowHeight="24" id="3td-Fd-i5A">
-                                <rect key="frame" x="0.0" y="332" width="600" height="40"/>
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="none" rowHeight="24" id="3td-Fd-i5A">
+                                <rect key="frame" x="0.0" y="309" width="600" height="24"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3td-Fd-i5A" id="auu-lp-ALf">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="24"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="forecastiolink" rowHeight="23" id="a1z-NC-Vy9" customClass="ForecastIOTableViewCell" customModule="FirstFlake" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="372" width="600" height="23"/>
+                                <rect key="frame" x="0.0" y="333" width="600" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a1z-NC-Vy9" id="qba-sa-uzc">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="23"/>
@@ -362,12 +379,16 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDW-En-yAu">
                                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                            <state key="normal" title="Powered by Forecast.io"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="16"/>
+                                            <state key="normal" title="Powered by Forecast.io">
+                                                <color key="titleColor" red="0.0" green="0.047058823529411764" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                             <connections>
                                                 <action selector="forecastioTappes:" destination="a1z-NC-Vy9" eventType="touchUpInside" id="1Jq-ZP-Qie"/>
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <color key="tintColor" red="0.80784313725490198" green="0.8784313725490196" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="hDW-En-yAu" firstAttribute="centerX" secondItem="qba-sa-uzc" secondAttribute="centerX" id="RTX-zv-15D"/>
                                         <constraint firstItem="hDW-En-yAu" firstAttribute="centerY" secondItem="qba-sa-uzc" secondAttribute="centerY" id="iw7-oO-qZb"/>
@@ -391,6 +412,8 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.40000000000000002" blue="0.59215686274509804" alpha="0.70298121165644167" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.55294117647058827" green="0.68627450980392157" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -398,7 +421,7 @@
                             <outlet property="delegate" destination="tGp-Ac-G1v" id="0of-Zx-37B"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="CqT-TY-kSN">
+                    <navigationItem key="navigationItem" title="City" id="CqT-TY-kSN">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="hZt-ZA-iHX">
                             <connections>
                                 <action selector="deletePressed:" destination="tGp-Ac-G1v" id="dwd-LD-xV6"/>

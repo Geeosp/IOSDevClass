@@ -13,3 +13,4 @@ struct City{
     var longitude:Double
 }
 var cities : [City] = [];
+

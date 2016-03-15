@@ -12,11 +12,14 @@ class CitiesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         navigationItem.leftBarButtonItem = editButtonItem()
         cities.append(City(name:"Chicago", latitude:41.875163,longitude: -87.626206));
         cities.append(City(name:"New York", latitude: 40.648053,longitude: -73.956160));
         cities.append(City(name:"Recife", latitude:-8.139559,longitude:  -34.909153));
         cities.append(City(name:"Anchorage", latitude:61.117657, longitude: -149.532932));
+        cities.append(City(name: "Oulu", latitude: 65.011176, longitude:  25.462496));
+        cities.append(City(name:"Oslo", latitude: 59.913829, longitude:10.752207));
         
    //  self.tableView.reloadData()
         
